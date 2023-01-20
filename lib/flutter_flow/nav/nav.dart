@@ -29,13 +29,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, _) => PaginaInicialWidget(),
+      errorBuilder: (context, _) => OnBoardigWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => PaginaInicialWidget(),
+          builder: (context, _) => OnBoardigWidget(),
           routes: [
+            FFRoute(
+              name: 'OnBoardig',
+              path: 'onBoardig',
+              builder: (context, params) => OnBoardigWidget(),
+            ),
             FFRoute(
               name: 'PaginaInicial',
               path: 'paginaInicial',
@@ -60,11 +65,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'PaginaCadastro4',
               path: 'paginaCadastro4',
               builder: (context, params) => PaginaCadastro4Widget(),
-            ),
-            FFRoute(
-              name: 'OnBoardig',
-              path: 'onBoardig',
-              builder: (context, params) => OnBoardigWidget(),
             ),
             FFRoute(
               name: 'PaginaValidacao1',

@@ -151,7 +151,7 @@ class _PaginaValidacao1WidgetState extends State<PaginaValidacao1Widget> {
                                   EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  context.pushNamed('PaginaValidacao1');
+                                  context.pushNamed('PaginaValidacao2');
                                 },
                                 text: 'RG',
                                 options: FFButtonOptions(

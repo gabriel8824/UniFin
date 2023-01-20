@@ -188,6 +188,8 @@ class _PaginaValidacao2WidgetState extends State<PaginaValidacao2Widget> {
                                       return;
                                     }
                                   }
+
+                                  context.pushNamed('PaginaValidacao3');
                                 },
                                 child: Container(
                                   width: 100,

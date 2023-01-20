@@ -153,7 +153,7 @@ class _PaginaValidacao3WidgetState extends State<PaginaValidacao3Widget> {
                                         child: FFButtonWidget(
                                           onPressed: () async {
                                             context
-                                                .pushNamed('PaginaValidacao1');
+                                                .pushNamed('PaginaValidacao4');
                                           },
                                           text: 'CONFIRMAR',
                                           options: FFButtonOptions(
@@ -188,8 +188,9 @@ class _PaginaValidacao3WidgetState extends State<PaginaValidacao3Widget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             20, 0, 20, 50),
                                         child: FFButtonWidget(
-                                          onPressed: () {
-                                            print('Button pressed ...');
+                                          onPressed: () async {
+                                            context
+                                                .pushNamed('PaginaValidacao2');
                                           },
                                           text: 'TENTAR NOVAMENTE',
                                           options: FFButtonOptions(
