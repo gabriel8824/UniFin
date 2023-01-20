@@ -2,6 +2,7 @@ import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/upload_media.dart';
+import '../flutter_flow/permissions_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -157,6 +158,7 @@ class _PaginaValidacao2WidgetState extends State<PaginaValidacao2Widget> {
                                   EdgeInsetsDirectional.fromSTEB(20, 0, 20, 50),
                               child: InkWell(
                                 onTap: () async {
+                                  await requestPermission(cameraPermission);
                                   final selectedMedia = await selectMedia(
                                     imageQuality: 100,
                                     multiImage: false,
