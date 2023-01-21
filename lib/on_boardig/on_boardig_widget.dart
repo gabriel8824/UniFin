@@ -77,7 +77,7 @@ class _OnBoardigWidgetState extends State<OnBoardigWidget> {
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0, 0, 0, 20),
                                             child: Text(
-                                              'Acompanhe seus gastos, gerencie seu orçamento e salve para seus objetivos sem complicações.  teste',
+                                              'Acompanhe seus gastos, gerencie seu orçamento e salve para seus objetivos sem complicações. ',
                                               textAlign: TextAlign.center,
                                               style: FlutterFlowTheme.of(
                                                       context)
