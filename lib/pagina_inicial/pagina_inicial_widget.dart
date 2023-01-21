@@ -98,7 +98,7 @@ class _PaginaInicialWidgetState extends State<PaginaInicialWidget> {
                           padding:
                               EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
                           child: Text(
-                            'Agora é mais fácil do que nunca controlar suas finanças.',
+                            'Agora é mais fácil do que nunca controlar suas finanças. teste',
                             textAlign: TextAlign.center,
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(

@@ -53,10 +53,15 @@ class _OnBoardigWidgetState extends State<OnBoardigWidget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Image.asset(
-                                  'assets/images/mega-creator_(2).png',
-                                  height: 500,
-                                  fit: BoxFit.contain,
+                                Expanded(
+                                  child: Align(
+                                    alignment: AlignmentDirectional(0, 0),
+                                    child: Image.asset(
+                                      'assets/images/mega-creator_(2).png',
+                                      height: 500,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -65,24 +70,28 @@ class _OnBoardigWidgetState extends State<OnBoardigWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Expanded(
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0, 20, 0, 0),
-                                          child: Text(
-                                            'Acompanhe seus gastos, gerencie seu orçamento e salve para seus objetivos sem complicações. 1',
-                                            textAlign: TextAlign.center,
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyText2
-                                                .override(
-                                                  fontFamily: 'Montserrat',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryText,
-                                                  fontSize: 18,
-                                                  letterSpacing: 1,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
+                                        child: Align(
+                                          alignment: AlignmentDirectional(0, 0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 0, 0, 20),
+                                            child: Text(
+                                              'Acompanhe seus gastos, gerencie seu orçamento e salve para seus objetivos sem complicações. ',
+                                              textAlign: TextAlign.center,
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyText2
+                                                  .override(
+                                                    fontFamily: 'Montserrat',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryText,
+                                                    fontSize: 18,
+                                                    letterSpacing: 1,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -254,8 +263,7 @@ class _OnBoardigWidgetState extends State<OnBoardigWidget> {
                               radius: 16,
                               dotWidth: 16,
                               dotHeight: 4,
-                              dotColor:
-                                  FlutterFlowTheme.of(context).primaryBtnText,
+                              dotColor: Color(0xFFBCBDD2),
                               activeDotColor:
                                   FlutterFlowTheme.of(context).primaryColor,
                               paintStyle: PaintingStyle.fill,
@@ -284,7 +292,7 @@ class _OnBoardigWidgetState extends State<OnBoardigWidget> {
                         },
                       );
                     },
-                    text: 'Continuar',
+                    text: 'Continuar ',
                     options: FFButtonOptions(
                       width: double.infinity,
                       height: 50,
